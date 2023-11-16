@@ -1,47 +1,40 @@
 // TODO Add a couple lines about each project
 const data = [
   {
-    title: 'Nearest Dollar',
-    subtitle: '2015 BVP Hackathon',
-    image: '/images/projects/nearestdollar.jpg',
-    date: '2015-11-20',
+    title: 'GoVistaImageConverter',
+    subtitle: 'Learning GoLang by creating an image converter desktop app.',
+    image: '/images/projects/go-logo-blue.svg',
+    date: '2023-10-1',
     desc:
-      'Built for a social impact hackathon. '
-      + 'NearestDollar connected to your bank accounts, credit cards, '
-      + 'or debit cards and rounded up your purchases to donate the balance to '
-      + 'the charity of your choice.',
+        'To learn GoLang I decided to create a simple desktop app running on both Linux and Windows'
+        + ' (even on Windows Vista i.e on i386 architecture) to easily convert any image type.'
+        + 'The app uses libvips@8.9+ to do the heavy image processing.',
   },
   {
-    title: 'Harvest',
-    subtitle: 'Won 3rd. place in 2015 Techcrunch Disrupt SF Hackathon',
-    link: 'https://devpost.com/software/harvest',
-    image: '/images/projects/harvest.jpg',
-    date: '2015-09-20',
+    title: 'CaloriesTrackerApp',
+    subtitle: 'Creating a mobile app to track your daily calory intake.',
+    image: '/images/projects/react-native-1.svg',
+    date: '2023-05-1',
     desc:
-      'Won ~ $7000 in prizes for an advanced, low cost monitoring solution '
-      + 'for crops. Harvest was designed to catch irrigation leaks, overwatering, '
-      + 'and nutrient deficiencies at an affordable price for the developing world.',
+        'Used React Native to develop a very minimal and simple to use app to track daily calories intake.',
   },
   {
-    title: 'Space Potato',
-    subtitle: 'A kickstarter funded potato powered weather balloon.',
-    link: 'http://www.spacepotato.org',
-    image: '/images/projects/spacepotato.jpg',
-    date: '2015-06-28',
+    title: 'DevOps with Raspberry Pis',
+    subtitle: 'Creating a home Kubernetes cluster with 2 Raspberry Pis 4.',
+    image: '/images/projects/RPiAndKubernetes.png',
+    date: '2022-03-1',
     desc:
-      'Launched a potato battery powered weather balloon with two cameras '
-      + 'and gps transponder. Resulting photos were published in a coffee table book. '
-      + 'You can email me for a copy.',
+        'I used 2 Raspberry Pis 4 to create my home Kubernetes Cluster. '
+        + 'With this cluster I learned how to use Kubernetes but also how to create and use a CI/CD pipeline that I deployed using Gitea and Drone. '
+        + 'Moreover, I deployed many other different apps like a local DNS (piHole), a file hosting service (NextCloud) and many more.',
   },
   {
-    title: 'Cat Detector',
-    subtitle: 'A convolutional neural network to classify cats! (and dogs)',
-    image: '/images/projects/catdetector.jpg',
-    date: '2015-05-15',
+    title: 'Art generation using GANs',
+    subtitle: 'Using the power of generative adversarial neural networks to create artworks that I like',
+    image: '/images/projects/seed0387.png',
+    date: '2022-02-1',
     desc:
-      'Trained a convolutional neural network to classify between ~ 80 cats breeds. '
-      + 'Over 60,000 cats were classified before server bills made the project too expensive '
-      + 'to continue hosting.',
+      'Using a GAN to generate artwork and then super-sampling it using ESRGAN ',
   },
 ];
 
