@@ -1,0 +1,56 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-site
+spec:
+  selector:
+    role: my-site
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: personal-site-deployment
+  labels:
+    role: my-site
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      role: my-site
+  template:
+    metadata:
+      labels:
+        role: my-site
+    spec:
+      containers:
+        - name: my-site
+          image: "maximedurand/personal-site:latest-arm64"
+          imagePullPolicy: Always
+          resources:
+            requests:
+              cpu: 10m
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-site-ingress
+  labels:
+    app: my-site
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+    - host: maxime.local.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: my-site
+                port:
+                  number: 3000

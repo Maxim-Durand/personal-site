@@ -1,0 +1,41 @@
+kind: pipeline
+type: kubernetes
+name: default
+
+platform:
+  os: linux
+  arch: arm64
+
+steps:
+  - name: publish-docker
+    image: plugins/docker
+    settings:
+      repo: maximedurand/personal-site
+      tags: [ "${DRONE_COMMIT_SHA:0:7}","latest-arm64" ]
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+  - name: deliver-to-k8s
+    image: ubuntu:22.04
+    environment:
+      age_private_ssh_key:
+        from_secret: rsa_age_private
+    commands:
+      - "apt update"
+      - "apt install age"
+      - "apt-get update"
+      - "apt-get install -y apt-transport-https ca-certificates curl"
+      - "curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg"
+      - "echo \"deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main\" | tee /etc/apt/sources.list.d/kubernetes.list"
+      - "apt-get update"
+      - "apt-get install -y kubectl"
+      - "echo \"$age_private_ssh_key\" > ./ssh_rsa_age"
+      - "age -d -i ./ssh_rsa_age config.age > config"
+      - "export KUBECONFIG=./config"
+      - "kubectl apply -f deployment.yml"
+
+host_aliases:
+  - ip: 10.0.0.225
+    hostnames:
+      - "gitea.local.com"
