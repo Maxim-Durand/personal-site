@@ -39,7 +39,7 @@ const data: StatData[] = [
     label: 'Last updated at',
     key: 'pushed_at',
     link: 'https://github.com/Maxim-Durand/personal-site/commits',
-    format: (x) => dayjs(x).format('MMMM DD, YYYY'),
+    format: (x: unknown) => dayjs(x as string).format('MMMM DD, YYYY'),
   },
   {
     // TODO update this with a pre-commit hook
