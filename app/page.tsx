@@ -6,7 +6,7 @@ import PageWrapper from './components/PageWrapper';
 
 export const metadata: Metadata = {
   description:
-    "Maxime Durand is a data scientist, machine learning engineer, and full-stack engineer.",
+    "Maxime Durand is a Site Reliability Engineer (SRE), full-stack developer, and open-source enthusiast.",
 };
 
 export default function HomePage() {
@@ -16,27 +16,26 @@ export default function HomePage() {
         <header>
           <div className="title">
             <h2>
-              <Link href="/about">About this site</Link>
+              <Link href="/about">Welcome to my website !</Link>
             </h2>
             <p>
-              A beautiful, responsive, statically-generated, react application
-              written with modern Javascript.
+              Not the most best website you'll ever see, but could be interesting if you want to know what I do.
             </p>
           </div>
         </header>
         <p>
           {' '}
           Welcome to my website. Please feel free to read more{' '}
-          <Link href="/about">about me</Link>, or you can check out my{' '}
-          <Link href="/resume">resume</Link>,{' '}
-          <Link href="/projects">projects</Link>, view{' '}
-          <Link href="/stats">site statistics</Link>, or{' '}
-          <Link href="/contact">contact</Link> me.
+          <Link href="/about" style={{ color: 'blue' }}>about me</Link>, or you can check out my{' '}
+          <Link href="/resume" style={{ color: 'blue' }}>resume</Link>,{' '}
+          <Link href="/projects" style={{ color: 'blue' }}>projects</Link>, view{' '}
+          <Link href="/stats" style={{ color: 'blue' }}>site statistics</Link>, or{' '}
+          <Link href="/contact" style={{ color: 'blue' }}>contact</Link> me.
         </p>
         <p>
           {' '}
           Source available{' '}
-          <a href="https://github.com/mldangelo/personal-site">here</a>.
+          <a href="https://github.com/Maxim-Durand/personal-site">here</a>.
         </p>
       </article>
     </PageWrapper>

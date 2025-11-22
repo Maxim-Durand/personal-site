@@ -31,15 +31,11 @@ const SideBar: React.FC = () => {
       </section>
 
       <section className="blurb">
-        <h2>About</h2>
+        <h2>About Me</h2>
         <p>
-          Hi, I&apos;m Michael. I am a{' '}
-          <a href="https://icme.stanford.edu/">Stanford ICME</a> graduate, YC
-          alumnus, and the co-founder and CTO of{' '}
-          <a href="https://promptfoo.dev">Promptfoo</a>. Previously, I was VP of
-          Engineering at <a href="https://usesmileid.com">SmileID</a>,
-          co-founder and CTO of <a href="https://arthena.com">Arthena</a>, and
-          co-founded <a href="https://matroid.com">Matroid</a>.
+          Hi, I&apos;m Maxime. I currently work as a Site Reliability Engineer (SRE) and
+          full-stack developer. I&apos;m passionate about open-source software,
+          DevOps practices, and building reliable, scalable systems.
         </p>
         <ul className="actions">
           <li>
@@ -59,7 +55,7 @@ const SideBar: React.FC = () => {
       <section id="footer">
         <ContactIcons />
         <p className="copyright">
-          &copy; Maxime Durand <Link href="/">mldangelo.com</Link>.
+          &copy; Maxime Durand <Link href="/">maximedurand.work@gmail.com</Link>.
         </p>
       </section>
     </section>
