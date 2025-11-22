@@ -11,7 +11,7 @@ const skills = [
   },
   {
     title: 'React',
-    competency: 2,
+    competency: 4,
     category: ['Web Development', 'Javascript'],
   },
   {
@@ -21,12 +21,12 @@ const skills = [
   },
   {
     title: 'Bash',
-    competency: 2,
+    competency: 4,
     category: ['Tools', 'Languages'],
   },
   {
     title: 'Amazon Web Services',
-    competency: 4,
+    competency: 5,
     category: ['Web Development', 'Tools'],
   },
   {
@@ -41,12 +41,12 @@ const skills = [
   },
   {
     title: 'ElasticSearch',
-    competency: 2,
+    competency: 4,
     category: ['Web Development', 'Databases'],
   },
   {
-    title: 'PostgreSQL/SQLite3/SQL/Redshift',
-    competency: 4,
+    title: 'PostgreSQL',
+    competency: 5,
     category: ['Web Development', 'Databases', 'Languages'],
   },
   {
@@ -86,7 +86,7 @@ const skills = [
   },
   {
     title: 'Kubernetes',
-    competency: 2,
+    competency: 5,
     category: ['Tools', 'Data Engineering'],
   },
   {
@@ -96,17 +96,22 @@ const skills = [
   },
   {
     title: 'AWS',
-    competency: 3,
-    category: ['Tools', 'Web Development'],
+    competency: 5,
+    category: ['Tools'],
+  },
+  {
+    title: 'Azure',
+    competency: 5,
+    category: ['Tools'],
   },
   {
     title: 'Docker',
-    competency: 3,
+    competency: 5,
     category: ['Tools', 'Data Engineering'],
   },
   {
     title: 'AWS Lambda',
-    competency: 3,
+    competency: 5,
     category: ['Tools', 'Web Development'],
   },
   {
@@ -136,7 +141,7 @@ const skills = [
   },
   {
     title: 'Typescript',
-    competency: 3,
+    competency: 5,
     category: ['Web Development', 'Languages', 'Javascript'],
   },
   {
