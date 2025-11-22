@@ -19,7 +19,7 @@ export default function HomePage() {
               <Link href="/about">Welcome to my website !</Link>
             </h2>
             <p>
-              Not the most best website you'll ever see, but could be interesting if you want to know what I do.
+              Not the best website you'll ever see, but could be interesting if you want to know what I do.
             </p>
           </div>
         </header>
