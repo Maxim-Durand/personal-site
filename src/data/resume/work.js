@@ -32,7 +32,8 @@ const work = [
       'Optimized costs of cloud infrastructure by right-sizing resources and leveraging reserved instances.',
       'Enhanced security posture by implementing robust access controls and regular audits.',
       'Developed comprehensive documentation for infrastructure and operational procedures.',
-      'Insured database reliability and performance through regular maintenance and optimization tasks, upgrading and migrating through different services while insuring the integrity and availability of the data.',
+      'Insured database reliability and performance through regular maintenance and optimization tasks,',
+      ' upgrading and migrating through different services while insuring the integrity and availability of the data.',
     ],
   },
   {

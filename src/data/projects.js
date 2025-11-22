@@ -36,7 +36,7 @@ const data = [
         + 'With this cluster I learned how to use Kubernetes but also how to create and use a CI/CD pipeline that I deployed using Gitea and Drone. '
         + 'Moreover, I deployed many other different apps like a local DNS (piHole), a file hosting service (NextCloud) and many more.',
   },
-{
+  {
     title: 'Virtual Art Gallery',
     subtitle: 'Virtual gallery to showcase previously generated artworks',
     image: '/images/projects/virtual_art_gallery.png',
@@ -61,7 +61,7 @@ const data = [
       'Using a library called p5.js I started creating cool visuals, graphs etc...'
     + 'You can check some of them at https://maxim-durand.github.io/generativeArt/'
     + ' Most of those pages are interactive so try left clicking',
-  }
+  },
 ];
 
 export default data;

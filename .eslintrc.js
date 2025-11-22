@@ -40,5 +40,6 @@ module.exports = {
       declaration: true,
       return: true,
     }],
+    'max-len': ['error', { code: 200 }],
   },
 };

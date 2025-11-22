@@ -5,14 +5,14 @@ import Main from '../layouts/Main';
 
 const Index = () => (
   <Main
-    description={"Maxime Durand's personal website."}
+    description="Maxime Durand's personal website."
   >
     <article className="post" id="index">
       <header>
         <div className="title">
           <h2><Link to="/">Welcome to my website !</Link></h2>
           <p>
-            Not the most best website you'll ever see, but could be interesting if you want to know what I do.
+            Not the most best website you&apos;ll ever see, but could be interesting if you want to know what I do.
           </p>
         </div>
       </header>
