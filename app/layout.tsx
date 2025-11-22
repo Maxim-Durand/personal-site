@@ -22,36 +22,35 @@ const raleway = Raleway({
 
 export const metadata: Metadata = {
   title: {
-    default: "Michael D'Angelo",
-    template: "%s | Michael D'Angelo",
+    default: "Maxime Durand",
+    template: "%s | Maxime Durand",
   },
   description:
-    "Michael D'Angelo's personal website. Data scientist, machine learning engineer, and full-stack developer.",
+    "Maxime Durand's personal website.",
   keywords: [
-    "Michael D'Angelo",
-    'data scientist',
-    'machine learning',
+    "Maxime Durand",
+    'site reliability engineer',
     'full-stack developer',
     'engineer',
     'portfolio',
   ],
-  authors: [{ name: "Michael D'Angelo" }],
-  creator: "Michael D'Angelo",
-  metadataBase: new URL('https://mldangelo.com'),
+  authors: [{ name: "Maxime Durand" }],
+  creator: "Maxime Durand",
+  metadataBase: new URL('https://maxim-durand.github.io/personal-site/'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://mldangelo.com',
-    siteName: "Michael D'Angelo",
-    title: "Michael D'Angelo",
+    url: 'https://maxim-durand.github.io/personal-site/',
+    siteName: "Maxime Durand",
+    title: "Maxime Durand",
     description:
-      'Data scientist, machine learning engineer, and full-stack developer.',
+      'Site Reliability Engineer, full-stack developer,OSS and DevOps enthusiast.',
     images: [
       {
-        url: '/images/me.jpg',
+        url: '/images/me.png',
         width: 1200,
         height: 630,
-        alt: "Michael D'Angelo",
+        alt: "Maxime Durand",
       },
     ],
   },

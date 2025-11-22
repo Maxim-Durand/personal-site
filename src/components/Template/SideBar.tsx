@@ -16,16 +16,16 @@ const SideBar: React.FC = () => {
         <Link href="/" className="logo">
           <Image
             src="/images/me.jpg"
-            alt="Michael D'Angelo"
+            alt="Maxime Durand"
             width={200}
             height={200}
             priority
           />
         </Link>
         <header>
-          <h2>Michael D&apos;Angelo</h2>
+          <h2>Maxime Durand</h2>
           <p>
-            <a href="mailto:michael@mldangelo.com">michael@mldangelo.com</a>
+            <a href="mailto:maximedurand.work@gmail.com">maximedurand.work@gmail.com</a>
           </p>
         </header>
       </section>
@@ -59,7 +59,7 @@ const SideBar: React.FC = () => {
       <section id="footer">
         <ContactIcons />
         <p className="copyright">
-          &copy; Michael D&apos;Angelo <Link href="/">mldangelo.com</Link>.
+          &copy; Maxime Durand <Link href="/">mldangelo.com</Link>.
         </p>
       </section>
     </section>
