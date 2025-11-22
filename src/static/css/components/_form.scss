@@ -6,192 +6,119 @@
 
 /* Form */
 
-	form {
-		margin: 0 0 _size(element-margin) 0;
+form {
+  margin: 0 0 _size(element-margin) 0;
+}
 
-		&.search {
-			@include icon;
-			position: relative;
+label {
+  color: _palette(fg-bold);
+  display: block;
+  font-size: 0.9em;
+  font-weight: _font(weight-bold);
+  margin: 0 0 (_size(element-margin) * 0.5) 0;
+}
 
-			&:before {
-				color: _palette(fg-light);
-				content: '\f002';
-				display: block;
-				height: _size(element-height);
-				left: 0;
-				line-height: _size(element-height);
-				position: absolute;
-				text-align: center;
-				top: 0;
-				width: 2.5em;
-			}
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='tel'],
+select,
+textarea {
+  @include vendor('appearance', 'none');
+  background: _palette(border-bg);
+  border: none;
+  border: solid 1px _palette(border);
+  border-radius: 0;
+  color: inherit;
+  display: block;
+  outline: 0;
+  padding: 0 1em;
+  text-decoration: none;
+  width: 100%;
 
-			> input:first-child {
-				padding-left: 2.5em;
-			}
-		}
-	}
+  &:invalid {
+    box-shadow: none;
+  }
 
-	label {
-		color: _palette(fg-bold);
-		display: block;
-		font-size: 0.9em;
-		font-weight: _font(weight-bold);
-		margin: 0 0 (_size(element-margin) * 0.5) 0;
-	}
+  &:focus {
+    border-color: _palette(accent);
+    box-shadow: inset 0 0 0 1px _palette(accent);
+  }
+}
 
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	input[type="tel"],
-	select,
-	textarea {
-		@include vendor('appearance', 'none');
-		background: _palette(border-bg);
-		border: none;
-		border: solid 1px _palette(border);
-		border-radius: 0;
-		color: inherit;
-		display: block;
-		outline: 0;
-		padding: 0 1em;
-		text-decoration: none;
-		width: 100%;
+input[type='text'],
+input[type='password'],
+input[type='email'],
+select {
+  height: _size(element-height);
+}
 
-		&:invalid {
-			box-shadow: none;
-		}
+textarea {
+  padding: 0.75em 1em;
+}
 
-		&:focus {
-			border-color: _palette(accent);
-			box-shadow: inset 0 0 0 1px _palette(accent);
-		}
-	}
+input[type='checkbox'],
+input[type='radio'] {
+  @include vendor('appearance', 'none');
+  display: block;
+  float: left;
+  margin-right: -2em;
+  opacity: 0;
+  width: 1em;
+  z-index: -1;
 
-	.select-wrapper {
-		@include icon;
-		display: block;
-		position: relative;
+  & + label {
+    @include icon;
+    color: _palette(fg);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: _font(weight);
+    padding-left: (_size(element-height) * 0.6) + 0.75em;
+    padding-right: 0.75em;
+    position: relative;
 
-		&:before {
-			color: _palette(border);
-			content: '\f078';
-			display: block;
-			height: _size(element-height);
-			line-height: _size(element-height);
-			pointer-events: none;
-			position: absolute;
-			right: 0;
-			text-align: center;
-			top: 0;
-			width: _size(element-height);
-		}
+    &:before {
+      background: _palette(border-bg);
+      border: solid 1px _palette(border);
+      content: '';
+      display: inline-block;
+      height: (_size(element-height) * 0.6);
+      left: 0;
+      line-height: (_size(element-height) * 0.575);
+      position: absolute;
+      text-align: center;
+      top: 0;
+      width: (_size(element-height) * 0.6);
+    }
+  }
 
-		select::-ms-expand {
-			display: none;
-		}
-	}
+  &:checked + label {
+    &:before {
+      background: _palette(fg-bold);
+      border-color: _palette(fg-bold);
+      color: _palette(bg);
+      content: '\f00c';
+    }
+  }
 
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	select {
-		height: _size(element-height);
-	}
+  &:focus + label {
+    &:before {
+      border-color: _palette(accent);
+      box-shadow: 0 0 0 1px _palette(accent);
+    }
+  }
+}
 
-	textarea {
-		padding: 0.75em 1em;
-	}
+input[type='radio'] {
+  & + label {
+    &:before {
+      border-radius: 100%;
+    }
+  }
+}
 
-	input[type="checkbox"],
-	input[type="radio"], {
-		@include vendor('appearance', 'none');
-		display: block;
-		float: left;
-		margin-right: -2em;
-		opacity: 0;
-		width: 1em;
-		z-index: -1;
-
-		& + label {
-			@include icon;
-			color: _palette(fg);
-			cursor: pointer;
-			display: inline-block;
-			font-size: 1em;
-			font-weight: _font(weight);
-			padding-left: (_size(element-height) * 0.6) + 0.75em;
-			padding-right: 0.75em;
-			position: relative;
-
-			&:before {
-				background: _palette(border-bg);
-				border: solid 1px _palette(border);
-				content: '';
-				display: inline-block;
-				height: (_size(element-height) * 0.6);
-				left: 0;
-				line-height: (_size(element-height) * 0.575);
-				position: absolute;
-				text-align: center;
-				top: 0;
-				width: (_size(element-height) * 0.6);
-			}
-		}
-
-		&:checked + label {
-			&:before {
-				background: _palette(fg-bold);
-				border-color: _palette(fg-bold);
-				color: _palette(bg);
-				content: '\f00c';
-			}
-		}
-
-		&:focus + label {
-			&:before {
-				border-color: _palette(accent);
-				box-shadow: 0 0 0 1px _palette(accent);
-			}
-		}
-	}
-
-	input[type="checkbox"] {
-		& + label {
-			&:before {
-			}
-		}
-	}
-
-	input[type="radio"] {
-		& + label {
-			&:before {
-				border-radius: 100%;
-			}
-		}
-	}
-
-	::-webkit-input-placeholder {
-		color: _palette(fg-light) !important;
-		opacity: 1.0;
-	}
-
-	:-moz-placeholder {
-		color: _palette(fg-light) !important;
-		opacity: 1.0;
-	}
-
-	::-moz-placeholder {
-		color: _palette(fg-light) !important;
-		opacity: 1.0;
-	}
-
-	:-ms-input-placeholder {
-		color: _palette(fg-light) !important;
-		opacity: 1.0;
-	}
-
-	.formerize-placeholder {
-		color: _palette(fg-light) !important;
-		opacity: 1.0;
-	}
+::placeholder {
+  color: _palette(fg-light) !important;
+  opacity: 1;
+}
