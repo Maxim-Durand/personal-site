@@ -1,7 +1,12 @@
 const skills = [
   {
-    title: 'Javascript',
+    title: 'Golang',
     competency: 4,
+    category: ['Web Development', 'Languages'],
+  },
+  {
+    title: 'Javascript',
+    competency: 5,
     category: ['Web Development', 'Languages', 'Javascript'],
   },
   {
@@ -80,8 +85,8 @@ const skills = [
     category: ['Web Development', 'Python'],
   },
   {
-    title: 'Git/Mercurial',
-    competency: 3,
+    title: 'Git',
+    competency: 5,
     category: ['Tools'],
   },
   {
@@ -104,6 +109,32 @@ const skills = [
     competency: 5,
     category: ['Tools'],
   },
+  {
+    title: 'ArgoCD',
+    competency: 5,
+    category: ['Tools'],
+  },
+  {
+    title: 'Kustomize',
+    competency: 5,
+    category: ['Tools'],
+  },
+  {
+    title: 'Helm',
+    competency: 4,
+    category: ['Tools'],
+  },
+  {
+    title: 'Terraform',
+    competency: 4,
+    category: ['Tools'],
+  },
+  {
+    title: 'Pulumi',
+    competency: 5,
+    category: ['Tools'],
+  },
+
   {
     title: 'Docker',
     competency: 5,
