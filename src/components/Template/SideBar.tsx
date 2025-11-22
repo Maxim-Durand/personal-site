@@ -15,7 +15,7 @@ const SideBar: React.FC = () => {
       <section id="intro">
         <Link href="/" className="logo">
           <Image
-            src="/images/me.jpg"
+            src="/images/me.png"
             alt="Maxime Durand"
             width={200}
             height={200}
