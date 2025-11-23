@@ -9,9 +9,9 @@ export interface Project {
 
 const data: Project[] = [
   {
-    title: 'OSS Work',
+    title: 'Open Source Contributions',
     subtitle: 'Helping out in projects when I can.',
-    image: '/personal-site/images/projects/',
+    image: '/personal-site/images/projects/k8s.png',
     date: '2025-10-1',
     desc:
         'I always loved Open Source and I try to contribute as much as I can.'
