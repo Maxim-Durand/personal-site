@@ -9,7 +9,7 @@ import PageWrapper from '../components/PageWrapper';
 
 export const metadata: Metadata = {
   title: 'Stats',
-  description: "Some statistics about Maxime Durand.",
+  description: "Personal and site statistics for Maxime Durand.",
 };
 
 export default function StatsPage() {

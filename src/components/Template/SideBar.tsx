@@ -25,7 +25,7 @@ const SideBar: React.FC = () => {
         <header>
           <h2>Maxime Durand</h2>
           <p>
-            <a href="mailto:maximedurand.work@gmail.com">maximedurand.work@gmail.com</a>
+            <a href="mailto:maximedurand1931@gmail.com">maximedurand1931@gmail.com</a>
           </p>
         </header>
       </section>
@@ -55,7 +55,7 @@ const SideBar: React.FC = () => {
       <section id="footer">
         <ContactIcons />
         <p className="copyright">
-          &copy; Maxime Durand <Link href="/">maximedurand.work@gmail.com</Link>.
+          &copy; Maxime Durand <Link href="/">maximedurand1931@gmail.com</Link>.
         </p>
       </section>
     </section>

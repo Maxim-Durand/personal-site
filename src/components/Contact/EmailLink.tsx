@@ -90,8 +90,8 @@ const EmailLink: React.FC<EmailLinkProps> = ({ loopMessage = false }) => {
       onMouseEnter={() => setIsActive(false)}
       onMouseLeave={() => idx < messages.length && setIsActive(true)}
     >
-      <a href={validateText(message) ? 'mailto:durandmaxime.work@gmail.com' : ''}>
-        <span>durandmaxime.work</span>
+      <a href={validateText(message) ? 'mailto:maximedurand1931@gmail.com' : ''}>
+        <span>maximedurand1931</span>
         <span>@gmail.com</span>
       </a>
     </div>

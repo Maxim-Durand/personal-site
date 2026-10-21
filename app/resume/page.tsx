@@ -14,7 +14,7 @@ import work from '@/data/resume/work';
 export const metadata: Metadata = {
   title: 'Resume',
   description:
-    "Maxime Durand's Resume. Arthena, Matroid, YC, Skeptical Investments, Stanford ICME, Planet, and Facebook.",
+    "Maxime Durand's Resume. Site Reliability Engineer with experience in Kubernetes, CI/CD, observability, cloud infrastructure and DevSecOps.",
 };
 
 const sections = [

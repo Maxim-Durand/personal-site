@@ -40,7 +40,7 @@ const data: StatData[] = [
   {
     key: 'location',
     label: 'Current city',
-    value: 'Decentralized',
+    value: 'France',
   },
 ];
 

@@ -20,7 +20,7 @@ const data: ContactItem[] = [
     icon: faGithub,
   },
   {
-    link: 'mailto:durandmaxime.work@gmail.com',
+    link: 'mailto:maximedurand1931@gmail.com',
     label: 'Email',
     icon: faEnvelope,
   },

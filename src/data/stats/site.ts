@@ -23,10 +23,6 @@ const data: StatData[] = [
     link: 'https://github.com/Maxim-Durand/personal-site/network',
   },
   {
-    label: 'Number of spoons',
-    value: '0',
-  },
-  {
     label: 'Number of linter warnings',
     value: '0', // enforced via github workflow
   },

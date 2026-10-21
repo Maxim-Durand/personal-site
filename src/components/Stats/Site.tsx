@@ -41,7 +41,7 @@ const Stats: React.FC = () => {
 
   return (
     <div>
-      <h3>Some stats about this site</h3>
+      <h3>Site statistics</h3>
       <Table data={data} />
     </div>
   );

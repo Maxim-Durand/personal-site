@@ -16,16 +16,16 @@ export default function HomePage() {
         <header>
           <div className="title">
             <h2>
-              <Link href="/about">Welcome to my website !</Link>
+              <Link href="/about">Welcome</Link>
             </h2>
             <p>
-              Not the best website you'll ever see, but could be interesting if you want to know what I do.
+              A look at my professional background, projects and technical interests.
             </p>
           </div>
         </header>
         <p>
           {' '}
-          Welcome to my website. Please feel free to read more{' '}
+          Welcome to my website. Feel free to learn more{' '}
           <Link href="/about" style={{ color: 'blue' }}>about me</Link>, or you can check out my{' '}
           <Link href="/resume" style={{ color: 'blue' }}>resume</Link>,{' '}
           <Link href="/projects" style={{ color: 'blue' }}>projects</Link>, view{' '}
