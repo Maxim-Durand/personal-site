@@ -132,12 +132,12 @@ const skills: Skill[] = [
   },
   {
     title: 'Helm',
-    competency: 4,
+    competency: 5,
     category: ['Tools'],
   },
   {
     title: 'Terraform',
-    competency: 4,
+    competency: 5,
     category: ['Tools'],
   },
   {
@@ -212,16 +212,6 @@ const skills: Skill[] = [
     category: ['Languages'],
   },
   {
-    title: 'Julia',
-    competency: 2,
-    category: ['Languages'],
-  },
-  {
-    title: 'MATLAB',
-    competency: 2,
-    category: ['Languages'],
-  },
-  {
     title: 'R',
     competency: 2,
     category: ['Languages'],
@@ -240,36 +230,6 @@ const skills: Skill[] = [
     title: 'Pandas',
     competency: 5,
     category: ['Data Engineering', 'ML Engineering', 'Python'],
-  },
-  {
-    title: 'Matplotlib',
-    competency: 3,
-    category: ['Data Engineering', 'ML Engineering', 'Python'],
-  },
-  {
-    title: 'Scikit-Learn',
-    competency: 4,
-    category: ['Data Engineering', 'ML Engineering', 'Python'],
-  },
-  {
-    title: 'Spark',
-    competency: 2,
-    category: ['Data Engineering', 'ML Engineering'],
-  },
-  {
-    title: 'Dagster',
-    competency: 2,
-    category: ['Data Engineering', 'Python', 'ML Engineering'],
-  },
-  {
-    title: 'Mypy',
-    competency: 3,
-    category: ['Python'],
-  },
-  {
-    title: 'Pylint',
-    competency: 4,
-    category: ['Data Engineering', 'Python'],
   },
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
 

@@ -25,16 +25,6 @@ const data: Project[] = [
       'Hosted and administered many different services, such as a file hosting server called NextCloud or a local DNS with PiHole.',
   },
   {
-    title: 'Art generation with machine learning',
-    subtitle: 'January 2023 - June 2023',
-    link: 'https://maxim-durand.github.io/virtual-art-gallery/build',
-    image: '/personal-site/images/projects/virtual_art_gallery.png',
-    date: '2023-01-1',
-    desc:
-      'Generated art pieces in high-resolution using deep learning using generative adversarial network models. ' +
-      'Experimented with many different ML environments (Google Collab, AWS EC2 & Sagemaker, Gradient ML).',
-  },
-  {
     title: 'GoVistaImageConverter',
     subtitle: 'Learning GoLang by creating an image converter desktop app.',
     image: '/personal-site/images/projects/go-logo-blue.svg',
@@ -64,7 +54,9 @@ const data: Project[] = [
     subtitle: 'Using generative adversarial networks to create artworks',
     image: '/personal-site/images/projects/seed0387.png',
     date: '2022-02-1',
-    desc: 'Used a GAN to generate artwork, then upscaled it using ESRGAN.',
+    desc:
+      'Generated art pieces in high-resolution using generative adversarial network and diffusion models. ' +
+      'Experimented with many different ML environments (Google Collab, AWS EC2 & Sagemaker, Gradient ML).',
   },
   {
     title: 'Making artworks and visuals using p5.js',

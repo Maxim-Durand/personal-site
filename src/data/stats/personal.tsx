@@ -33,13 +33,13 @@ const data: StatData[] = [
   {
     key: 'countries',
     label: 'Countries visited',
-    value: 11,
+    value: 14,
     link: '',
   },
   {
     key: 'location',
     label: 'Current city',
-    value: 'France',
+    value: 'Paris',
   },
 ];
 
