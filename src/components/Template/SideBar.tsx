@@ -25,7 +25,9 @@ const SideBar: React.FC = () => {
         <header>
           <h2>Maxime Durand</h2>
           <p>
-            <a href="mailto:maximedurand1931@gmail.com">maximedurand1931@gmail.com</a>
+            <a href="mailto:maximedurand1931@gmail.com">
+              maximedurand1931@gmail.com
+            </a>
           </p>
         </header>
       </section>
@@ -33,9 +35,9 @@ const SideBar: React.FC = () => {
       <section className="blurb">
         <h2>About Me</h2>
         <p>
-          Hi, I&apos;m Maxime. I currently work as a Site Reliability Engineer (SRE) and
-          full-stack developer. I&apos;m passionate about open-source software,
-          DevOps practices, and building reliable, scalable systems.
+          Hi, I&apos;m Maxime. I currently work as a Site Reliability Engineer
+          (SRE) and full-stack developer. I&apos;m passionate about open-source
+          software, DevOps practices, and building reliable, scalable systems.
         </p>
         <ul className="actions">
           <li>

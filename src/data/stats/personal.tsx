@@ -34,8 +34,7 @@ const data: StatData[] = [
     key: 'countries',
     label: 'Countries visited',
     value: 11,
-    link:
-      '',
+    link: '',
   },
   {
     key: 'location',

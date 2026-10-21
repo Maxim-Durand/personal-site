@@ -5,8 +5,6 @@ export interface Course {
   university: string;
 }
 
-const courses: Course[] = [
-  
-];
+const courses: Course[] = [];
 
 export default courses;

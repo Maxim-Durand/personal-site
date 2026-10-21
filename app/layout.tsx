@@ -22,27 +22,26 @@ const raleway = Raleway({
 
 export const metadata: Metadata = {
   title: {
-    default: "Maxime Durand",
-    template: "%s | Maxime Durand",
+    default: 'Maxime Durand',
+    template: '%s | Maxime Durand',
   },
-  description:
-    "Maxime Durand's personal website.",
+  description: "Maxime Durand's personal website.",
   keywords: [
-    "Maxime Durand",
+    'Maxime Durand',
     'site reliability engineer',
     'full-stack developer',
     'engineer',
     'portfolio',
   ],
-  authors: [{ name: "Maxime Durand" }],
-  creator: "Maxime Durand",
+  authors: [{ name: 'Maxime Durand' }],
+  creator: 'Maxime Durand',
   metadataBase: new URL('https://maxim-durand.github.io/personal-site/'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://maxim-durand.github.io/personal-site/',
-    siteName: "Maxime Durand",
-    title: "Maxime Durand",
+    siteName: 'Maxime Durand',
+    title: 'Maxime Durand',
     description:
       'Site Reliability Engineer, full-stack developer,OSS and DevOps enthusiast.',
     images: [
@@ -50,7 +49,7 @@ export const metadata: Metadata = {
         url: '/personal-site/images/me.png',
         width: 1200,
         height: 630,
-        alt: "Maxime Durand",
+        alt: 'Maxime Durand',
       },
     ],
   },
