@@ -46,7 +46,7 @@ export const metadata: Metadata = {
       'Site Reliability Engineer, full-stack developer,OSS and DevOps enthusiast.',
     images: [
       {
-        url: '/personal-site/images/me.png',
+        url: '/personal-site/images/me.jpg',
         width: 1200,
         height: 630,
         alt: 'Maxime Durand',
